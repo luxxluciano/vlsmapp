@@ -1,2 +1,1 @@
-# vlsmapp
-VLSM Util
+This script uses the Streamlit library to create a web app that allows the user to input the major network IP and mask, the number of subnets to create, and the host requirements for each subnet. It then uses the ipaddress library to calculate the number of subnets required and the prefix length for each subnet, and creates the subnets. Finally, it presents the subnets created in a table with their names, and prefix length. It also includes input validation to check if the user has entered a valid number of subnets and hosts.
