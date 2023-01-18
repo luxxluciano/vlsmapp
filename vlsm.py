@@ -2,6 +2,13 @@ import streamlit as st
 import ipaddress
 import math
 
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
 def create_vlsm():
     # Get the major network IP and mask from the user
     major_network = st.text_input("Enter the major network IP and mask (e.g. 192.168.0.0/16): ")
