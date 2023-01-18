@@ -15,7 +15,7 @@ def create_vlsm():
     try:
         ip = ipaddress.IPv4Network(major_network)
     except ValueError:
-        st.error("Invalid IP or mask")
+        st.error("Enter a valid IP and mask")
         return
 
     # Create a dictionary to store the subnets and their host requirements
